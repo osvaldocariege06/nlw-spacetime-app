@@ -45,6 +45,14 @@ export default function App() {
   )
 
   useEffect(() => {
+    console.log(
+      makeRedirectUri({
+        scheme: 'nlwspacetime',
+      }),
+    )
+
+    console.log(response)
+
     if (response?.type === 'success') {
       const { code } = response.params
       console.log(code)
